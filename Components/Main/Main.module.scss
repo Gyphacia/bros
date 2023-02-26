@@ -1,0 +1,28 @@
+@import "/Styles/theme.scss";
+
+.Main{
+    @include flexV(flex-start, center);
+    gap: $off5;
+    min-height: 100vh;
+    padding: $off1r;
+    background-color: $cd1;
+    &Plus{
+        @include pressable();
+        @include rect($off5);
+        @include circle;
+        display: block;
+        background: none;
+        fill: $cl0;
+        position: relative;
+        &:hover{
+            fill: $cb0;
+        }
+        & svg{
+            fill: inherit;
+            @include rect(80%);
+            @include pos(50%);
+            translate: -50% -50%;
+            position: absolute;
+        }
+    }
+}

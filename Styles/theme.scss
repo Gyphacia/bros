@@ -1,0 +1,246 @@
+// 888b     d888 d8b          d8b                   
+// 8888b   d8888 Y8P          Y8P                   
+// 88888b.d88888                                    
+// 888Y88888P888 888 888  888 888 88888b.  .d8888b  
+// 888 Y888P 888 888 `Y8bd8P' 888 888 "88b 88K      
+// 888  Y8P  888 888   X88K   888 888  888 "Y8888b. 
+// 888   "   888 888 .d8""8b. 888 888  888      X88 
+// 888       888 888 888  888 888 888  888  88888P' 
+
+@mixin PTSans(){
+    font-family: PTSansPro;
+}
+
+@mixin Sans(){
+    font-family: PTSansPro;
+}
+
+@mixin flex($just: flex-start, $align: flex-start, $dir: row, $wrap: nowrap){
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin flexV($just: flex-start, $align: flex-start, $dir: column, $wrap: nowrap){
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin rect($w, $h:false){
+    width: $w;
+    @if $h {
+        height: $h;
+    }
+    @else{
+        height: $w;
+    }
+}
+
+@mixin circle($roundness: 100vmax){
+    border-radius: $roundness;
+}
+
+
+@mixin font($size: $fz12, $weight: 400, $lineHeight: 1.5em){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+}
+
+@mixin pos($w, $h:false){
+    left: $w;
+    @if $h {
+        top: $h;
+    }
+    @else{
+        top: $w;
+    }
+}
+
+@mixin pressable($o:-3px, $bo:5px, $i:3px, $bi:7px, $border:3px){
+    --p: #{$o}; --b: #{$bo}; --m: calc(-1 * var(--p));
+    --i: #{$i}; --k: #{$bi}; --j: calc(-1 * var(--i));
+    border: $border solid #8881;
+    box-shadow:
+        var(--p) var(--p) var(--b) 0 $shadow1,
+        var(--m) var(--m) var(--b) 0 $shadow0,
+        var(--j) var(--j) var(--k) 0 $shadow0 inset,
+        var(--i) var(--i) var(--k) 0 $shadow1 inset,
+    ;
+    transition-duration: 255ms;
+    color: $cl0;
+    fill: $cl0;
+    cursor: pointer;
+    &:hover{
+        color: $cb0;
+        fill: $cb0;
+        border-color: $cb3;
+    }
+    &:active{
+        --p: calc(#{$o} * -1);
+        --i: calc(#{$i} * .5);
+    }
+}
+
+@mixin inset($o:2px, $bo:7px, $border:3px){
+    --p: #{$o}; --b: #{$bo}; --m: calc(-1 * var(--p));
+    border: $border solid #8881;
+    box-shadow:
+        var(--p) var(--p) var(--b) 0 $shadow1,
+        var(--m) var(--m) var(--b) 0 $shadow0
+    ;
+}
+
+@mixin input(){
+    @include inset(1px, 3px, 2px);
+    @include circle($off0);
+    background: none;
+    color: $cl0;
+    padding: $off0;
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &:focus{
+        border-color: $cb0;
+        color: $cb0;
+    }
+}
+
+//  .d8888b.           888                           
+// d88P  Y88b          888                           
+// 888    888          888                           
+// 888         .d88b.  888  .d88b.  888d888 .d8888b  
+// 888        d88""88b 888 d88""88b 888P"   88K      
+// 888    888 888  888 888 888  888 888     "Y8888b. 
+// Y88b  d88P Y88..88P 888 Y88..88P 888          X88 
+//  "Y8888P"   "Y88P"  888  "Y88P"  888      88888P' 
+
+$colorLight0: #fff; $cl0: $colorLight0;
+$colorLight1: #eee; $cl1: $colorLight1;
+$colorLight2: #ddd; $cl2: $colorLight2;
+$colorLight3: #aaa; $cl3: $colorLight3;
+
+$colorDark0: #000; $cd0: $colorDark0;
+$colorDark1: #222; $cd1: $colorDark1;
+$colorDark2: #333; $cd2: $colorDark2;
+$colorDark3: #444; $cd3: $colorDark3;
+
+$colorBright0: hsl(-15deg, 100%, 50%); $cb0: $colorBright0;
+$colorBright1: hsl(-15deg, 100%, 40%); $cb1: $colorBright1;
+$colorBright2: hsl(-15deg, 100%, 30%); $cb2: $colorBright2;
+$colorBright3: hsl(-15deg, 100%, 20%); $cb3: $colorBright3;
+$colorBright4: hsla(-15deg, 100%, 20%, .05); $cb4: $colorBright4;
+
+$shadow0: #000;
+$shadow1: #fff1;
+
+
+//  .d88888b.   .d888  .d888                   888             
+// d88P" "Y88b d88P"  d88P"                    888             
+// 888     888 888    888                      888             
+// 888     888 888888 888888 .d8888b   .d88b.  888888 .d8888b  
+// 888     888 888    888    88K      d8P  Y8b 888    88K      
+// 888     888 888    888    "Y8888b. 88888888 888    "Y8888b. 
+// Y88b. .d88P 888    888         X88 Y8b.     Y88b.       X88 
+//  "Y88888P"  888    888     88888P'  "Y8888   "Y888  88888P' 
+
+$offset0: calc(var(--off) * 0.5 );      $offset0r: calc(var(--off) * 0.75);
+$offset1: calc(var(--off) * 1.0 );      $offset1r: calc(var(--off) * 1.5 );
+$offset2: calc(var(--off) * 2.0 );      $offset2r: calc(var(--off) * 2.5 );
+$offset3: calc(var(--off) * 3.0 );      $offset3r: calc(var(--off) * 3.5 );
+$offset4: calc(var(--off) * 4.0 );      $offset4r: calc(var(--off) * 4.5 );
+$offset5: calc(var(--off) * 5.0 );      $offset5r: calc(var(--off) * 5.5 );
+$offset6: calc(var(--off) * 6.0 );      $offset6r: calc(var(--off) * 6.5 );
+$offset7: calc(var(--off) * 7.0 );      $offset7r: calc(var(--off) * 7.5 );
+$offset8: calc(var(--off) * 8.0 );      $offset8r: calc(var(--off) * 8.5 );
+$offset9: calc(var(--off) * 9.0 );      $offset9r: calc(var(--off) * 9.5 );
+                                                            
+$offsetAbs0: calc(var(--offA) * 0.5 );  $offsetAbs0r: calc(var(--offA) * 0.75);
+$offsetAbs1: calc(var(--offA) * 1.0 );  $offsetAbs1r: calc(var(--offA) * 1.5 );
+$offsetAbs2: calc(var(--offA) * 2.0 );  $offsetAbs2r: calc(var(--offA) * 2.5 );
+$offsetAbs3: calc(var(--offA) * 3.0 );  $offsetAbs3r: calc(var(--offA) * 3.5 );
+$offsetAbs4: calc(var(--offA) * 4.0 );  $offsetAbs4r: calc(var(--offA) * 4.5 );
+$offsetAbs5: calc(var(--offA) * 5.0 );  $offsetAbs5r: calc(var(--offA) * 5.5 );
+$offsetAbs6: calc(var(--offA) * 6.0 );  $offsetAbs6r: calc(var(--offA) * 6.5 );
+$offsetAbs7: calc(var(--offA) * 7.0 );  $offsetAbs7r: calc(var(--offA) * 7.5 );
+$offsetAbs8: calc(var(--offA) * 8.0 );  $offsetAbs8r: calc(var(--offA) * 8.5 );
+$offsetAbs9: calc(var(--offA) * 9.0 );  $offsetAbs9r: calc(var(--offA) * 9.5 );
+
+$off0: $offset0; $off0r: $offset0r;
+$off1: $offset1; $off1r: $offset1r;
+$off2: $offset2; $off2r: $offset2r;
+$off3: $offset3; $off3r: $offset3r;
+$off4: $offset4; $off4r: $offset4r;
+$off5: $offset5; $off5r: $offset5r;
+$off6: $offset6; $off6r: $offset6r;
+$off7: $offset7; $off7r: $offset7r;
+$off8: $offset8; $off8r: $offset8r;
+$off9: $offset9; $off9r: $offset9r;
+
+$offa0: $offsetAbs0; $offa0r: $offsetAbs0r;
+$offa1: $offsetAbs1; $offa1r: $offsetAbs1r;
+$offa2: $offsetAbs2; $offa2r: $offsetAbs2r;
+$offa3: $offsetAbs3; $offa3r: $offsetAbs3r;
+$offa4: $offsetAbs4; $offa4r: $offsetAbs4r;
+$offa5: $offsetAbs5; $offa5r: $offsetAbs5r;
+$offa6: $offsetAbs6; $offa6r: $offsetAbs6r;
+$offa7: $offsetAbs7; $offa7r: $offsetAbs7r;
+$offa8: $offsetAbs8; $offa8r: $offsetAbs8r;
+$offa9: $offsetAbs9; $offa9r: $offsetAbs9r;
+
+
+
+
+
+// 8888888888                888             
+// 888                       888             
+// 888                       888             
+// 8888888  .d88b.  88888b.  888888 .d8888b  
+// 888     d88""88b 888 "88b 888    88K      
+// 888     888  888 888  888 888    "Y8888b. 
+// 888     Y88..88P 888  888 Y88b.       X88 
+// 888      "Y88P"  888  888  "Y888  88888P' 
+
+$font10: calc(var(--font) * 1.0); $fz10: $font10;
+$font12: calc(var(--font) * 1.2); $fz12: $font12;
+$font14: calc(var(--font) * 1.4); $fz14: $font14;
+$font16: calc(var(--font) * 1.6); $fz16: $font16;
+$font18: calc(var(--font) * 1.8); $fz18: $font18;
+$font20: calc(var(--font) * 2.0); $fz20: $font20;
+$font24: calc(var(--font) * 2.4); $fz24: $font24;
+$font32: calc(var(--font) * 3.2); $fz32: $font32;
+$font38: calc(var(--font) * 3.8); $fz38: $font38;
+$font40: calc(var(--font) * 4.0); $fz40: $font40;
+$font46: calc(var(--font) * 4.6); $fz46: $font46;
+$font48: calc(var(--font) * 4.8); $fz48: $font48;
+$font50: calc(var(--font) * 5.0); $fz50: $font50;
+$font80: calc(var(--font) * 8.0); $fz80: $font80;
+
+$font120: calc(var(--font) * 12.0); $fz120: $font120;
+
+
+
+
+
+// 888b     d888 d8b                   
+// 8888b   d8888 Y8P                   
+// 88888b.d88888                       
+// 888Y88888P888 888 .d8888b   .d8888b 
+// 888 Y888P 888 888 88K      d88P"    
+// 888  Y8P  888 888 "Y8888b. 888      
+// 888   "   888 888      X88 Y88b.    
+// 888       888 888  88888P'  "Y8888P 
+
+$sides: var(--sides);
+$pageWidth: var(--pageWidth);
+$tablet: 1200px;
+$mobile: 600px;
+                                    
+                                    
+

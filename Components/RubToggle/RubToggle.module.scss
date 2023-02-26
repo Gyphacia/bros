@@ -1,0 +1,19 @@
+@import "/Styles/theme.scss";
+
+.RubToggle{
+    @include rect($off3r);
+    @include circle();
+    @include flex(center, center);
+    @include pressable();
+    position: relative;
+    & div{
+        @include rect(100%);
+        @include flex(center, center);
+        @include pos(50%, 50%);
+        @include font($fz18, 400, 1em);
+        translate: -50% -50%;
+        transition: scale 255ms;
+        position: absolute;
+        text-align: center;
+    }
+}

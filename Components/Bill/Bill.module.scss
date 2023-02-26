@@ -1,0 +1,232 @@
+@import "/Styles/theme.scss";
+
+.Bill{
+    @include inset(2px, 7px, 0);
+    @include circle($off0r);
+    @include flexV(flex-start, center);
+    gap: $off1;
+    padding: $off1r;
+    width: fit-content;
+    min-width: min(400px, 90vw);
+    margin: 0 auto;
+    &Summ{
+        @include pressable;
+        @include rect($off3);
+        @include circle;
+        grid-area: Minus;
+        background: none;
+        stroke: $cl0;
+        position: relative;
+        align-self: center;
+        &:hover{
+            stroke: $cb0;
+        }
+        & svg{
+            stroke: inherit;
+            position: absolute;
+            @include pos(50%, 50%);
+            @include rect(75%);
+            translate: -55% -50%;
+        }
+    }
+    &Title{
+        @include font($fz24, 700, 1em);
+        @include input;
+        text-align: center;
+        width: 15ch;
+    }
+    &Line{
+        @include flex(flex-start, center, row-reverse);
+        gap: $off2;
+    }
+    &Hat{
+        display: grid;
+        grid-template: auto auto / 1fr 1fr 1fr;
+        grid-template-areas: "Div1 Div2 Div3" "Pg1 Pg2 Pg3";
+        gap: $off1 $off3;
+        font-weight: 600;
+        color: $cl0;
+        & div{
+            @include rect($off4);
+            @include circle();
+            @include inset(-3px, 5px, 0);
+            cursor: pointer;
+            transition-duration: 255ms;
+            background-color: $cb3;
+            background-image: url('/images/b.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-self: center;
+            border: 2px solid $cd0;
+            &:nth-of-type(1){background-image: url('/images/b.webp'); align-self: start;}
+            &:nth-of-type(2){background-image: url('/images/m.webp'); align-self: center;}
+            &:nth-of-type(3){background-image: url('/images/f.webp'); align-self: end;}
+        }
+        & div:nth-of-type(1){grid-area: Div1;}
+        & div:nth-of-type(2){grid-area: Div2;}
+        & div:nth-of-type(3){grid-area: Div3;}
+        & p:nth-of-type(1){grid-area: Pg1;}
+        & p:nth-of-type(2){grid-area: Pg2;}
+        & p:nth-of-type(3){grid-area: Pg3;}
+    }
+    &Total{
+        display: grid;
+        grid-template: 1fr / auto 1fr auto;
+        align-items: center;
+        gap: $off1r;
+        // &Label{
+
+        // }
+        &Input{
+            @include input;
+            min-width: $off9;
+            font-weight: 600;
+        }
+        &Toggle{
+            background: none;
+            border: none;
+        }
+    }
+    &Lines{
+        // @include flexV(flex-start, center);
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        padding: $off1r;
+        gap: $off1r;
+        transition-duration: 255ms;
+        @media screen and (max-width: 1000px) {
+            grid-template: 1fr / 1fr;
+        }
+        &Plus{
+            @include rect($off3r);
+            @include pressable;
+            @include circle;
+            background: none;
+            min-height: $off3r;
+            fill: $cl0;
+            align-self: flex-start;
+            position: relative;
+            &:hover{
+                fill: $cb0;
+            }
+            & svg{
+                @include rect(80%);
+                @include pos(50%);
+                translate: -50% -50%;
+                position: absolute;
+                fill: inherit;
+            }
+        }
+        &Line{
+            display: grid;
+            grid-template: auto auto / auto auto;
+            gap: $off1;
+            grid-template-areas: "NameAmount Rub" "Members Minus";
+            align-items: center;
+            justify-content: center;
+            @include inset(1px, 5px, 0);
+            @include circle($off0r);
+            padding: $off1;
+            border: 2px solid #fff1;
+            &Members{
+                grid-area: Members;
+                grid-template: 1fr / repeat(3, 1fr);
+                display: grid;
+                width: 100%;
+                align-self: center;
+                &Member{
+                    @include rect($off4);
+                    @include circle();
+                    @include inset(-3px, 5px, 0);
+                    cursor: pointer;
+                    border: 2px solid $cd0;
+                    transition-duration: 255ms;
+                    background-color: $cb3;
+                    background-image: url('/images/b.webp');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    justify-self: center;
+                    &:nth-of-type(1){background-image: url('/images/b.webp'); align-self: start;}
+                    &:nth-of-type(2){background-image: url('/images/m.webp'); align-self: center;}
+                    &:nth-of-type(3){background-image: url('/images/f.webp'); align-self: end;}
+                }    
+            }
+            &Pair{
+                display: grid;
+                grid-template: 1fr / auto auto;
+                grid-area: NameAmount;
+                @include inset(1px, 5px, 0px);
+                @include circle($off0r);
+            }
+            &Name, &Amount{
+                --b: 1px;
+                border-radius: $off0r 0 0 $off0r;
+                border: calc(var(--b) * 2) solid $cd3;
+                border-right-width: var(--b);
+                background: none;
+                color: $cl0;
+                width: calc(13ch + #{$off0});
+                padding: calc(#{$off0} * .5);
+                height: fit-content;
+                transition-duration: 255ms;
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &:focus{
+                    color: $cb0;
+                    border-color: $cb0;
+                }
+            }
+            &Amount{
+                border-radius: 0 $off0r $off0r 0;
+                border-right-width: calc(var(--b) * 2);
+                border-left-width: var(--b);
+                width: calc(7ch + #{$off0});
+                font-weight: 600;
+            }
+            &Toggle{
+                & > *{
+                    width: $off3 !important;
+                    height: $off3 !important;
+                    &, & *{
+                        font-size: 14px !important;
+                    }
+                }
+                grid-area: Rub;
+            }
+            &Minus{
+                @include pressable;
+                @include rect($off3);
+                @include circle;
+                grid-area: Minus;
+                background: none;
+                fill: $cl0;
+                position: relative;
+                align-self: center;
+                &:hover{
+                    fill: $cb0;
+                }
+                & svg{
+                    fill: inherit;
+                    position: absolute;
+                    @include pos(50%, 50%);
+                    translate: -50% -50%;
+                }
+            }
+        }
+        &Toggle{
+            @include pressable;
+            @include rect($off3r);
+            @include circle;
+            background: none;
+            fill: $cl0;
+            &:hover{
+                fill: $cb0;
+            }
+            & svg{
+                fill: inherit;
+            }
+        }
+    }
+}

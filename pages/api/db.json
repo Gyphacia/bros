@@ -1,0 +1,792 @@
+{
+    "bills": [
+        {
+            "items": [
+                {
+                    "name": "WithBeefX2",
+                    "amount": 1060,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "Caesar",
+                    "amount": 1000,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Diablo",
+                    "amount": 760,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "LargePizzaBox",
+                    "amount": 110,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "BoxOfChicken",
+                    "amount": 70,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "BakingBoxSmall",
+                    "amount": 150,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "ChocolateCheese",
+                    "amount": 1500,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "ClubSandwich",
+                    "amount": 1880,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Maintenance",
+                    "amount": 400,
+                    "rub": false,
+                    "members": "bmf"
+                }
+            ],
+            "name": "25 Фев:Cанек",
+            "open": false,
+            "totalAmount": 6930,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Огурцы",
+                    "amount": 670,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Огурцы№2",
+                    "amount": 638,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Кола",
+                    "amount": 330,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сок",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Мазик",
+                    "amount": 629,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "МаслоПодс",
+                    "amount": 799,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "Энергос",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Гюмри",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Яйца",
+                    "amount": 1200,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Табак",
+                    "amount": 1200,
+                    "rub": false,
+                    "members": "mb"
+                }
+            ],
+            "name": "24 Фев:Мел",
+            "open": false,
+            "totalAmount": 8326,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "ПивоХ5",
+                    "amount": 2250,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "ПивоХ2",
+                    "amount": 900,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "КолбаскиХ2",
+                    "amount": 4740,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "ХлебХ2",
+                    "amount": 370,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Сметана",
+                    "amount": 648,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Масло",
+                    "amount": 955,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Пельмени",
+                    "amount": 3152,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "СоевыйСоус",
+                    "amount": 488,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Молоко",
+                    "amount": 898,
+                    "rub": false,
+                    "members": "bf"
+                },
+                {
+                    "name": "СокДолг",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Сок",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сыр",
+                    "amount": 1406,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Сыр№2",
+                    "amount": 1554,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "СтикиХ2",
+                    "amount": 1420,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "СтикиХ1",
+                    "amount": 710,
+                    "rub": false,
+                    "members": "b"
+                }
+            ],
+            "name": "23 Фев:Игорь",
+            "open": false,
+            "totalAmount": 20582,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Вино",
+                    "amount": 2600,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сок",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Пельмени",
+                    "amount": 1576,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Энергос",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Кетчуп",
+                    "amount": 499,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Печеньки",
+                    "amount": 678,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Кетчуп",
+                    "amount": 285,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Дошик",
+                    "amount": 538,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Лаваш",
+                    "amount": 122,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Стики",
+                    "amount": 2130,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Пиво",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Крем",
+                    "amount": 650,
+                    "rub": false,
+                    "members": "b"
+                }
+            ],
+            "name": "19 Фев:Мел",
+            "open": false,
+            "totalAmount": 9263,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Римская",
+                    "amount": 900,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Тоскана",
+                    "amount": 900,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Филе",
+                    "amount": 950,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Роллы",
+                    "amount": 2000,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Доставка",
+                    "amount": 400,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "Упаковка",
+                    "amount": 220,
+                    "rub": false,
+                    "members": "bm"
+                }
+            ],
+            "name": "пуцца",
+            "open": false,
+            "totalAmount": 5370,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Пакет",
+                    "amount": 39,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Стики",
+                    "amount": 710,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "Жиги",
+                    "amount": 531,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "СокХ2",
+                    "amount": 1090,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "СокИгорь",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Сметана",
+                    "amount": 650,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Молоко",
+                    "amount": 898,
+                    "rub": false,
+                    "members": "bf"
+                },
+                {
+                    "name": "Хлеб",
+                    "amount": 370,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Энегросы",
+                    "amount": 580,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Пиво",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Яйца",
+                    "amount": 845,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Картофель",
+                    "amount": 1000,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Кофе",
+                    "amount": 1000,
+                    "rub": false,
+                    "members": "bmf"
+                }
+            ],
+            "name": "18 Фев:Игорь",
+            "open": false,
+            "totalAmount": 10823,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "ПицыХ3",
+                    "amount": 1440,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сушки",
+                    "amount": 2000,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Тоскана",
+                    "amount": 900,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Римская",
+                    "amount": 900,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Доставка",
+                    "amount": 400,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "Коробки",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "bm"
+                }
+            ],
+            "name": "17 Фев:Мел",
+            "open": false,
+            "totalAmount": 5930,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Пельмени#1",
+                    "amount": 1576,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Пельмени#2",
+                    "amount": 1103,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Хлопушки",
+                    "amount": 729,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Вода",
+                    "amount": 195,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Чеснок",
+                    "amount": 90,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "СокX3",
+                    "amount": 1635,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "СокМой",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Мазик",
+                    "amount": 629,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Энергос",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Чипсы",
+                    "amount": 739,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "СоусЧил",
+                    "amount": 244,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Колбаса",
+                    "amount": 2370,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Вино",
+                    "amount": 3165,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "ПивоХ2",
+                    "amount": 810,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "ПивоХ5",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Сыр",
+                    "amount": 1436,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Кетчуп",
+                    "amount": 229,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Масло",
+                    "amount": 965,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Стики",
+                    "amount": 3550,
+                    "rub": false,
+                    "members": "m"
+                }
+            ],
+            "name": "16 Фев:Мел",
+            "open": false,
+            "totalAmount": 22326,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Стики",
+                    "amount": 2130,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Хлеб",
+                    "amount": 350,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Пельмени",
+                    "amount": 1309,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Пиво",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Вино",
+                    "amount": 1055,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Дошик",
+                    "amount": 269,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "СокКлуб",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "bm"
+                },
+                {
+                    "name": "СокПич",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "СокПич#2",
+                    "amount": 545,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Кола",
+                    "amount": 505,
+                    "rub": false,
+                    "members": "f"
+                },
+                {
+                    "name": "Энегрос",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Вода",
+                    "amount": 200,
+                    "rub": false,
+                    "members": "m"
+                }
+            ],
+            "name": "14 Фев:Мел",
+            "open": false,
+            "totalAmount": 9768,
+            "totalRub": false
+        },
+        {
+            "items": [
+                {
+                    "name": "Вода",
+                    "amount": 270,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Пиво Саши",
+                    "amount": 419,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Мусорный Пак",
+                    "amount": 898,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Пельмени",
+                    "amount": 553,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Дошики",
+                    "amount": 807,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Молоко",
+                    "amount": 1776,
+                    "rub": false,
+                    "members": "bf"
+                },
+                {
+                    "name": "ПивоИгорь",
+                    "amount": 2025,
+                    "rub": false,
+                    "members": "b"
+                },
+                {
+                    "name": "Энергос",
+                    "amount": 290,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сахар",
+                    "amount": 1088,
+                    "rub": false,
+                    "members": "bf"
+                },
+                {
+                    "name": "Сыр",
+                    "amount": 1577,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Колбаса",
+                    "amount": 4740,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Стики",
+                    "amount": 1420,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Сок",
+                    "amount": 1090,
+                    "rub": false,
+                    "members": "m"
+                },
+                {
+                    "name": "Капсулы",
+                    "amount": 860,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Яйцы",
+                    "amount": 1690,
+                    "rub": false,
+                    "members": "bmf"
+                },
+                {
+                    "name": "Кофе",
+                    "amount": 1000,
+                    "rub": false,
+                    "members": "bmf"
+                }
+            ],
+            "name": "12 Фев",
+            "open": false,
+            "totalAmount": 20854,
+            "totalRub": false
+        }
+    ]
+}
