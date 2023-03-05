@@ -146,7 +146,7 @@ export const Bill = observer((props:{id:int})=>{
             padding: bills[id].open ? '15px' : '0px'
         }}
         >
-            {bills[id].items.map((item, i)=>(
+            {bills[id].items.filter(e => bills[id].open).map((item, i)=>(
                 <React.Fragment key={i}>
                     <BillLine id={id} line={i}/>
                 </React.Fragment>
